@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Boilerplate And Navbar</title>
+
+  <!-- Fevicon -->
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+
+  <!-- Site font -->
+  <link rel="stylesheet" href="assets/fonts/webfonts/poppins/stylesheet.css" />
+  <link rel="stylesheet" href="assets/fonts/webfonts/cabinet-grotesk/stylesheet.css" />
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/vendors/jos.css" />
+  <link rel="stylesheet" href="assets/css/vendors/menu.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css" />
+  <!-- Development css -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Production css -->
+  <!-- <link rel="stylesheet" href="/assets/css/style.min.css" /> -->
+</head>
+
+<body class="page-wrapper relative">
+  <!-- ...:::Header Start:::... -->
+  <header class="section-header site-header fixed top-0 z-30 w-full py-[30px] border-b">
+    <!-- Section Container -->
+    <div class="container">
+      <!-- Header Area -->
+      <div class="grid grid-cols-[auto_auto] justify-between">
+        <!-- Header Left Block -->
+        <div class="flex items-center gap-[50px]">
+          <!-- Header Logo -->
+          <a href="index.html">
+            <img src="assets/img/logo-dark.png" alt="logo-white" width="118" height="25" class="h-auto max-w-full" />
+          </a>
+          <!-- Header Logo -->
+
+          <!-- Header Navigation -->
+          <div class="menu-block-wrapper">
+            <div class="menu-overlay"></div>
+            <nav class="menu-block" id="append-menu-header">
+              <div class="mobile-menu-head">
+                <div class="go-back">
+                  <img src="assets/img/icon/icon-arrow-left.svg" alt="icon-arrow-left" width="16" height="8"
+                    class="rotate-90" />
+                </div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="site-menu-main">
+                <li class="nav-item nav-item-has-children">
+                  <a href="#"
+                    class="nav-link-item drop-trigger rounded-none border border-transparent px-5 py-1 text-colorDark opacity-70 hover:border-colorDark hover:opacity-100 lg:rounded-[27px]">Demo
+                    <img src="assets/img/icon/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4"
+                      class="invert-0 lg:invert" />
+                  </a>
+                  <ul class="sub-menu" id="submenu-1">
+                    <li class="sub-menu--item">
+                      <a href="index.html">Home 1</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="index-2.html">Home 2</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="index-3.html">Home 3</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="index-4.html">Home 4</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="index-5.html">Home 5</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="index-6.html">Home 6</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="index-7.html">Home 7</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#"
+                    class="nav-link-item drop-trigger rounded-none border border-transparent px-5 py-1 text-colorDark opacity-70 hover:border-colorDark hover:opacity-100 lg:rounded-[27px]">Services
+                    <img src="assets/img/icon/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4"
+                      class="invert-0 lg:invert" />
+                  </a>
+                  <ul class="sub-menu" id="submenu-2">
+                    <li class="sub-menu--item">
+                      <a href="service.html">Services</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="service-details.html">Service Details</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#"
+                    class="nav-link-item drop-trigger rounded-none border border-transparent px-5 py-1 text-colorDark opacity-70 hover:border-colorDark hover:opacity-100 lg:rounded-[27px]">Pages
+                    <img src="assets/img/icon/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4"
+                      class="invert-0 lg:invert" />
+                  </a>
+                  <ul class="sub-menu" id="submenu-3">
+                    <li class="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" class="drop-trigger">Projects
+                        <i class="fa-solid fa-angle-right"></i>
+                      </a>
+                      <ul class="sub-menu shape-none" id="submenu-4">
+                        <li class="sub-menu--item">
+                          <a href="project.html">Project 1</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="project-2.html">Project 2</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="project-details.html">Project Details</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="pricing.html" data-menu-get="h3" class="drop-trigger">Pricing
+                      </a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="faq.html" data-menu-get="h3" class="drop-trigger">FAQ’s
+                      </a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="team.html" data-menu-get="h3" class="drop-trigger">Team
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#"
+                    class="nav-link-item drop-trigger rounded-none border border-transparent px-5 py-1 text-colorDark opacity-70 hover:border-colorDark hover:opacity-100 lg:rounded-[27px]">Company
+                    <img src="assets/img/icon/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4"
+                      class="invert-0 lg:invert" />
+                  </a>
+                  <ul class="sub-menu" id="submenu-5">
+                    <li class="sub-menu--item">
+                      <a href="about.html">About 1</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="about-2.html">About 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#"
+                    class="nav-link-item drop-trigger rounded-none border border-transparent px-5 py-1 text-colorDark opacity-70 hover:border-colorDark hover:opacity-100 lg:rounded-[27px]">News
+                    <img src="assets/img/icon/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4"
+                      class="invert-0 lg:invert" />
+                  </a>
+                  <ul class="sub-menu" id="submenu-6">
+                    <li class="sub-menu--item">
+                      <a href="blog.html">Blog 1</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="blog-2.html">Blog 2</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="blog-details.html">Blog Details</a>
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  class="nav-item rounded-none border border-transparent py-1 text-colorDark opacity-70 hover:border-colorDark hover:opacity-100 lg:rounded-[27px] lg:px-5">
+                  <a href="contact.html" class="nav-link-item">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- Header Navigation -->
+        </div>
+        <!-- Header Left Block -->
+
+        <!-- Header Right Block -->
+        <div class="flex items-center gap-11">
+          <!-- Search Button -->
+          <div class="relative">
+            <button id="toggleButton" class="flex justify-center items-center">
+              <img src="assets/img/icon/icon-gray-search.svg" alt="icon-gray-search" width="15" height="15"
+                class="h-5 w-5" />
+            </button>
+            <div id="searchContainer" class="absolute right-0 ml-4 hidden translate-y-[30px]">
+              <input type="search" placeholder="Search..."
+                class="rounded-[27px] border text-colorDark bg-colorGreyWhite px-4 py-2 focus:outline-none" />
+            </div>
+          </div>
+          <!-- Search Button -->
+
+          <!-- WhatsApp Link -->
+          <div
+            class="hidden rounded-[27px] border border-colorDark bg-white/10 px-5 py-2 text-sm font-medium text-colorDark xxl:inline-block">
+            WhatsApp:
+            <a href="tel:+234534890111" class="font-semibold text-colorDark">(234) 534-890-11</a>
+          </div>
+          <!-- WhatsApp Link -->
+
+          <!-- Menu Button -->
+          <button class="hidden">
+            <img src="assets/img/icon/icon-white-menu-line.svg" alt="icon-white-menu-line" width="24" height="24"
+              class="h-6 w-6" />
+          </button>
+          <!-- Menu Button -->
+
+          <!-- Responsive Offcanvas Menu Button -->
+          <div class="block lg:hidden">
+            <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+              <span class="bg-colorDark before:bg-white after:bg-white"></span>
+            </button>
+          </div>
+        </div>
+        <!-- Header Right Block -->
+      </div>
+      <!-- Header Area -->
+    </div>
+    <!-- Section Container -->
+  </header>
+  <!-- ...::Header End:::... -->
+
+  <!-- Vendors JS -->
+  <script src="assets/js/vendors/counterup.js" type="module"></script>
+  <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+  <script src="assets/js/vendors/menu.js"></script>
+  <script src="assets/js/vendors/fslightbox.js"></script>
+  <script src="assets/js/vendors/jos.min.js"></script>
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
