@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+
   body,
   .page-wrapper {
-    @apply min-h-screen font-body text-base leading-[1.6] text-white/75;
+    @apply min-h-screen font-body text-base leading-[1.6];
   }
 
   /* Default Heading */
@@ -15,7 +16,7 @@
   h4,
   h5,
   h6 {
-    @apply font-title text-white;
+    @apply font-title;
   }
 
   h1 {
@@ -82,6 +83,7 @@
     opacity: 0;
     transform: translate3d(0, 100%, 0) scale3d(1, 2, 1);
   }
+
   100% {
     opacity: 1;
     transform: translate3d(0, 0, 0);
@@ -96,6 +98,7 @@
 .container {
   @apply mx-auto max-w-[1600px] px-5 lg:px-8 xl:px-10;
 }
+
 .container-custom {
   @apply mx-auto max-w-[1380px] px-5 lg:px-8 xl:px-10;
 }
@@ -104,129 +107,24 @@
 .section-space {
   @apply py-20 lg:py-[100px] xl:py-[120px] xxl:py-[200px];
 }
+
 .section-space-top {
   @apply pt-20 lg:pt-[100px] xl:pt-[120px] xxl:pt-[200px];
 }
+
 .section-space-bottom {
   @apply pb-20 lg:pb-[100px] xl:pb-[120px] xxl:pb-[200px];
 }
 
-/* Horizontal Line Separator */
-.horizontal-line {
-  @apply h-px w-full;
-}
-
-/* Section Tag */
-.section-tag {
-  @apply mb-8 inline-block rounded-[27px]  border px-5 py-2 text-sm;
-}
-.section-tag-dark {
-  @apply border-white/[9%]  bg-white/10 text-white;
-}
-.section-tag-orange {
-  @apply border-colorOrange/[9%]  bg-colorOrange/[4%] text-colorOrange;
-}
-
-/* Section Title */
-.section-tile {
-  @apply font-normal;
-}
-
-/* Breadcrumb */
-.breadcrumb-wrapper {
-  @apply flex flex-col items-center justify-center pb-24 pt-36 lg:pb-[155px]  lg:pt-[220px];
-}
-
-.breadcrumb-nav {
-  @apply mb-7 inline-flex gap-4 rounded-[27px] border border-white/[9%] bg-white/10 px-5 py-2 text-sm capitalize;
-}
-
-.breadcrumb-nav li {
-  @apply relative font-semibold after:absolute after:left-[calc(100%+8px)] after:h-5 after:w-0.5 after:rotate-12 after:bg-white last:font-normal last:after:hidden;
-}
-
-.breadcrumb-title {
-  @apply block text-4xl leading-[1.15] md:text-5xl lg:text-6xl xl:text-[66px];
-}
-
 /* Utility Class */
 .scrolling {
-  @apply bg-colorDark/30 shadow-sm shadow-white/[2%] backdrop-blur-sm;
+  @apply bg-white/80 shadow-sm shadow-white/[2%] backdrop-blur-sm;
 }
+
 .scrolling.is-white {
   @apply bg-white/30 shadow-sm shadow-colorDark/[2%] backdrop-blur-sm;
 }
+
 .animate-transition {
   @apply transition-all duration-300 ease-in-out;
-}
-
-/* Accordion */
-
-.accordion-body {
-  @apply h-0 translate-y-5 overflow-clip opacity-0 transition-all duration-500;
-}
-
-.accordion-item.active .accordion-body {
-  @apply mt-5 h-auto translate-y-0 opacity-100;
-}
-
-/* Rich Text */
-.rich-text p {
-  @apply mb-7 last:mb-0;
-}
-.rich-text h3 {
-  @apply my-[10px];
-}
-
-.rich-text ul {
-  @apply mb-14 ml-5 flex list-disc flex-col gap-y-5 last:mb-0;
-}
-
-.rich-text figure {
-  @apply my-14 grid grid-cols-1 gap-6 xl:grid-cols-2;
-}
-.rich-text figcaption {
-  @apply bg-colorGreyDark px-[26px] py-7;
-}
-.rich-text figcaption h3 {
-  @apply mt-0;
-}
-.rich-text figcaption ul {
-  @apply mb-0 ml-0 flex list-inside list-image-[url(../img/icon/icon-orange-check-mark.svg)] flex-col gap-y-2;
-}
-
-.rich-text blockquote {
-  @apply my-14 border-l-4 border-colorOrange bg-colorGreyDark px-7 py-5;
-}
-
-/* SLider Nav */
-.hero-pagination.swiper-pagination-bullets {
-  @apply static flex w-auto;
-}
-.hero-pagination .swiper-pagination-bullet {
-  @apply inline-flex h-[50px] w-[50px] items-center justify-center border border-white/[23%] bg-transparent text-xl font-semibold text-white opacity-100;
-}
-.hero-pagination .swiper-pagination-bullet-active {
-  @apply border-white/[13%] bg-white/[13%];
-}
-
-.hero-pagination.hero-pagination-2 .swiper-pagination-bullet-active {
-  @apply border-white bg-white text-colorDark;
-}
-
-.testimonial-pagination .swiper-pagination-bullet {
-  @apply h-4 w-4 border border-white lg:h-5 lg:w-5;
-}
-.testimonial-pagination .swiper-pagination-bullet-active {
-  @apply border-colorOrange bg-colorOrange;
-}
-
-/* Slider Progressbar */
-.testimonial-progressbar.swiper-pagination-progressbar {
-  @apply bottom-0 top-auto h-px bg-white/[12%];
-}
-
-.testimonial-progressbar.swiper-pagination-progressbar
-  .swiper-pagination-progressbar-fill {
-  @apply bg-colorOrange;
 }
